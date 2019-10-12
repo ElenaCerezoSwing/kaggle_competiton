@@ -15,3 +15,12 @@ def drop_and_fill(df):
     drop_cols(df)
     fill_empty(df)
     return df
+
+# Corerected data cleaning
+
+def drop_corrected_cols(df):
+    df.drop(['Id','county_fips', 'county_name', 'state_fips', 'state_code','title_status', 'state_name', 'city', 'manufacturer', 
+           'make', 'paint_color', 'drive', 'condition'], axis=1, inplace=True)
+    print('df existe')
+    return df
+

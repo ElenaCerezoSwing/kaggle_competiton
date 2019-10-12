@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-from drop_and_fill import drop_and_fill
+from drop_and_fill import drop_and_fill, drop_corrected_cols
 
 
 # function for removing cylinders string at field cylinders
@@ -34,4 +34,18 @@ def get_cleaner_data(df):
     df = transform_string_values(df)
     df = drop_and_fill(df)
     df = dummify(df)
+    return df
+
+
+def random_forest_dummify(df):  
+    df = pd.get_dummies(df, ['fuel', 'size', 'type'])
+    return df
+
+
+def get_random_forest_cleaner_data(df):
+    df = transform_string_values(df)
+    print('strings ok')
+    df = drop_corrected_cols(df)
+    print(df.columns)
+    df = random_forest_dummify(df)
     return df

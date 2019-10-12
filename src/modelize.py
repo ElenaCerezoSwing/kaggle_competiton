@@ -1,5 +1,7 @@
 from sklearn.linear_model import LinearRegression, Ridge, SGDRegressor
 from sklearn.neighbors import KNeighborsRegressor
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.datasets import make_regression
 
 
 def get_svm_regression(features):
@@ -33,6 +35,13 @@ def get_sgd_model(X, y, test):
     sgd.fit(X, y)
     y_pred = sgd.predict(test)
     return y_pred
+
+
+def get_random_forest_model(X, y, test):
+    regr = RandomForestRegressor(max_depth=5, random_state=42,n_estimators=100)
+    regr.fit(X, y)
+    y_pred_random = regr.predict(test)
+    return y_pred_random
 
 
 
