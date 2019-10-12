@@ -71,5 +71,7 @@ Y por supuesto, al resto de mis compañeras y compañeros de IronHack que siempr
 
 * Pd: Como conclusión se puede sacar que el precio de los coches es muy alto... independientemente del año, por lo tanto... usemos :bike::bike: :bike: es mejor para nuestra salud y la del planeta.
 
+* [Presentación](https://www.canva.com/design/DADoG5KCP5E/6tPpRnKA1ych8XRzilbwxg/view?utm_content=DADoG5KCP5E&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
+
 
 
