@@ -22,11 +22,8 @@ def main():
   ridge_model_generator(X_normal, y_normal , test_mormal)
   print('processing randomForest Model')
   X, y = assign_X_y(train)
-  print('se hace la asignación')
   X_test = test
-  print('se limipia X_test')
   X_test = get_random_forest_cleaner_data(X_test)
-  print('se limipia X')
   X = get_random_forest_cleaner_data(X)
   X_transform, X_test_transform = get_standard_scaler(X, X_test)
   X_transform = X_transform.fillna(0)

@@ -44,8 +44,6 @@ def random_forest_dummify(df):
 
 def get_random_forest_cleaner_data(df):
     df = transform_string_values(df)
-    print('strings ok')
     df = drop_corrected_cols(df)
-    print(df.columns)
     df = random_forest_dummify(df)
     return df
